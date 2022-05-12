@@ -1,0 +1,30 @@
+.root {
+    -fx-background-image:url("2.jpg");
+}
+
+#player-controls {
+    -fx-padding: 20px;
+}
+
+.label {
+    -fx-font-size: 20px;
+    -fx-text-fill: #EEEEEE;
+    -fx-cursor: hand;
+}
+
+.label:hover {
+    -fx-text-fill: #3E3E3E;
+}
+
+#pause {
+    -fx-padding: 1px 5px;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+#vol{
+     -fx-cursor: hand;
+}
+#time{
+     -fx-cursor: hand;
+}
+

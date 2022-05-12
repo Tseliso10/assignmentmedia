@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo8.Controller">
+    <center>
+        <MediaView fx:id="mediaView" fitHeight="450.0" fitWidth="550.0" BorderPane.alignment="CENTER" />
+    </center>
+    <bottom>
+        <VBox prefHeight="82.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="41.0" prefWidth="600.0" spacing="30.0">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <children>
+                        <Label fx:id="pause" onMouseClicked="#pauseVideo" text="Pause" />
+                        <Label onMouseClicked="#stopVideo" text="Stop" />
+                        <Label onMouseClicked="#playVideo" text="Play" />
+                        <Slider fx:id="vol" />
+                  <Label fx:id="lblTime" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+</BorderPane>
